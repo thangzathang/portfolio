@@ -19,16 +19,23 @@ The purpose of this website is to showcase my web development skills - a portfol
 
 ### 2. Functionality / features
 
-blah blah blach add some bs
-
+<br >
 
 ### 3. Sitemap
 
+<br >
+
 ### 4. Screenshots
 
+<br >
+
 ### 5. Target audience  
+The target audience is my Coder Academy Educator for now. 
+
+<br >
 
 ### 6. Tech stack
 
+The tech stack consists of HTML, CSS and Javascript. The deployment platform is netlify and I bought my own domain name from godaddy.com.
 
 
