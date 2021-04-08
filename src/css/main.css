@@ -1,3 +1,6 @@
+/* 
+    Main will serve only as the spin of my styling structure
+*/
 *,
 *::before,
 *::after {
@@ -9,5 +12,30 @@
 
 body {
   text-align: center;
+}
+
+nav {
+  padding: 2rem;
+  width: 100%;
+  background-color: yellowgreen;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: dodgerblue;
 }
 /*# sourceMappingURL=main.css.map */

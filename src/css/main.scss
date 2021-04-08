@@ -1,11 +1,15 @@
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* 
+    Main will serve only as the spin of my styling structure
+*/
 
-body {
-    text-align: center;
-}
+// Base - This is for the html and body styling
+@import "base";
+
+// Skill.html
+@import "skills";
+
+// ContactMe.html
+@import "contactMe";
+
+// blog.html
+@import "blog"
