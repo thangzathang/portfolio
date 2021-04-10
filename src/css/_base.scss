@@ -6,28 +6,141 @@
     box-sizing: border-box;
 }
 
+/* 
+    Inspired Color Scheme from: 
+    https://visme.co/blog/website-color-schemes/
+*/ 
+
+$dark-primary: #0B0C10;
+$dark-secondary: #1F2833;
+$neutral-color: #C5C6C7;
+$text-primary: #66FCF1;
+$text-secondary: #45A29E; 
+
 body {
     text-align: center;
+    font-family: 'Noto Sans', sans-serif;
 }
+
+/* 
+    NAV and Logo Name section 
+*/
 
 nav {
-    padding: 2rem;
-    width: 100%;
+    // padding: 2rem;
+    // width: 100%;
+    min-height: 12vh;
+    background-color: $dark-primary;
 
-    background-color: yellowgreen;
-}
-
-nav ul {
     display: flex;
     justify-content: space-evenly;
+    /* 
+        More white space control between logo and nav links
+        justify-content: space-between;
+        padding: 0 6rem;
+    */ 
+    align-items: center;
 
-    li {
-        list-style-type: none;
+    // Easier for now to nest nav than use classes
+    ul {
+        display: flex;
+        justify-content: space-around;
+        min-width: 45%;
+
+        li {
+            list-style-type: none;
+        }
+
+        li a {
+            color: $text-primary;
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+    }
+}
+
+.main-name {
+    color: $text-primary;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div{
+    background-color: $text-primary;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+
+    // For the burger toggle animation
+    transition: all .39s ease-in-out;
+}
+
+/*
+    Media Breakpoint for NAV
+*/
+@media screen and (max-width: 768px) {
+    // Needed the nav-link class now - not gonna do the sass nesting. Counter-practical.
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        top: 12vh;
+        // height: 100%; 
+        height: 88vh;
+        
+        background-color: $dark-primary;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 50%;
+
+        // Move the nav off the screen and then hide the overflow in x axis.
+        transform: translateX(100%);
+        transition: transform .5s ease-out;
     }
 
-    li a {
-        text-decoration: none;
-        font-size: 1.4rem;
-        color: dodgerblue;
+    body {
+        overflow-x: hidden;
+        /*
+        This will hide the nav bar after we have moved it left 
+        and users simply won't be able to simply scroll on the x axis 
+        */
     }
+
+    .burger {
+        display: inline-block;
+        /*
+        When this breakpoint hits, it will trigger so that 
+        the nav links are moved out of screen and the burger comes on
+        */
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+.toggle .line1  {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    // transition: .4s ease-in-out;
+    // managed the animations at parent
+}
+
+.toggle .line2  {
+    opacity: 0;
+    // transition: .2s ease-in-out;
+}
+
+.toggle .line3  {
+    transform: rotate(45deg) translate(-5px, -6px);
+    // transition: .4s ease-in-out;
 }

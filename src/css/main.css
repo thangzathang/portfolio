@@ -10,23 +10,44 @@
           box-sizing: border-box;
 }
 
+/* 
+    Inspired Color Scheme from: 
+    https://visme.co/blog/website-color-schemes/
+*/
 body {
   text-align: center;
+  font-family: 'Noto Sans', sans-serif;
 }
 
+/* 
+    NAV and Logo Name section 
+*/
 nav {
-  padding: 2rem;
-  width: 100%;
-  background-color: yellowgreen;
-}
-
-nav ul {
+  min-height: 12vh;
+  background-color: #0B0C10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  /* 
+        More white space control between logo and nav links
+        justify-content: space-between;
+        padding: 0 6rem;
+    */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-width: 45%;
 }
 
 nav ul li {
@@ -34,8 +55,97 @@ nav ul li {
 }
 
 nav ul li a {
+  color: #66FCF1;
   text-decoration: none;
-  font-size: 1.4rem;
-  color: dodgerblue;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.main-name {
+  color: #66FCF1;
+  letter-spacing: 4px;
+  font-size: 1.5rem;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  background-color: #66FCF1;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  -webkit-transition: all .39s ease-in-out;
+  transition: all .39s ease-in-out;
+}
+
+/*
+    Media Breakpoint for NAV
+*/
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    top: 12vh;
+    height: 88vh;
+    background-color: #0B0C10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform .5s ease-out;
+    transition: -webkit-transform .5s ease-out;
+    transition: transform .5s ease-out;
+    transition: transform .5s ease-out, -webkit-transform .5s ease-out;
+  }
+  body {
+    overflow-x: hidden;
+    /*
+        This will hide the nav bar after we have moved it left 
+        and users simply won't be able to simply scroll on the x axis 
+        */
+  }
+  .burger {
+    display: inline-block;
+    /*
+        When this breakpoint hits, it will trigger so that 
+        the nav links are moved out of screen and the burger comes on
+        */
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.top-container {
+  background-color: red;
 }
 /*# sourceMappingURL=main.css.map */
