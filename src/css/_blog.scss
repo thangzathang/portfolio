@@ -103,12 +103,26 @@
     }
 
     &__body {
+        text-align: start;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+
         padding: 2rem;
         background-color: blue;
         min-height: 100%;
+
+        p {
+            line-height: 1.1rem;
+        }
+
+        &--withImage {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 2rem 1rem;
+            background-color: #fff;
+            margin: 2rem 0;
+        }
     }
 }
 
