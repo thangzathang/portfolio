@@ -1,5 +1,3 @@
-
-
 *,
 *::before,
 *::after {
@@ -28,7 +26,12 @@ body {
     NAV and Logo Name section 
 */
 
+img {
+    z-index: -1;
+}
+
 nav {
+    z-index: 1000;
     // padding: 2rem;
     // width: 100%;
     min-height: 12vh;
