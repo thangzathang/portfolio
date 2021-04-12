@@ -1,7 +1,7 @@
 .skills-header {
     display: flex;
     justify-content: flex-start;
-    padding: 2rem;
+    padding: 4rem 2rem 1rem;
 
     color: $text-primary;
     background-color: $dark-secondary;
@@ -21,7 +21,7 @@
 .skills-display {
     width: 100vw;
     background-color: $dark-secondary;
-    padding: 6rem 1rem;
+    padding: 2rem 1rem;
 
     display: flex;
     justify-content: space-evenly;
@@ -46,6 +46,6 @@
 }
 
 .skills-image {
-    max-width: auto;
+    min-width: auto;
     max-height: 6rem;
 }

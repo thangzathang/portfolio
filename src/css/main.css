@@ -251,7 +251,7 @@ nav ul li a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 2rem;
+  padding: 4rem 2rem 1rem;
   color: #66FCF1;
   background-color: #1F2833;
 }
@@ -269,7 +269,7 @@ nav ul li a {
 .skills-display {
   width: 100vw;
   background-color: #1F2833;
-  padding: 6rem 1rem;
+  padding: 2rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,7 +308,7 @@ nav ul li a {
 }
 
 .skills-image {
-  max-width: auto;
+  min-width: auto;
   max-height: 6rem;
 }
 /*# sourceMappingURL=main.css.map */
