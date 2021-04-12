@@ -1,0 +1,114 @@
+#overrideBlog {
+    padding-top: 1rem;
+}
+
+.top-container--blog {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+    min-height: 100%;
+
+    background-color: $dark-secondary;
+    background-image: none;
+}
+
+.contentBox {
+    overflow: scroll;
+    padding: 1rem .6rem;
+    border-radius: 2rem;
+    margin: 0 1rem;
+    background-color: $text-secondary;
+    flex-basis: 25%;
+
+    &__contentItem:hover {
+        transition: border .1s ease;
+        border-left: 1.2rem solid $polar-primary;
+        font-weight: 800;
+        color: $polar-primary;
+
+        a {
+            color: inherit;
+        }
+    }
+
+    &__contentItem {
+        color: $dark-secondary;
+        cursor: pointer;
+        padding: .6rem;
+        margin: 1rem;
+        background-color: $neutral-color;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        border-left: 0.8rem solid $text-primary;
+        border-top-right-radius: 1.2rem;
+        border-bottom-right-radius: 1.2rem;
+        border-top-left-radius: .4rem;
+        border-bottom-left-radius: .4rem;
+
+        a {
+            text-decoration: none;
+            margin: 4px 0;
+            color: $dark-secondary;
+        }
+    }
+}
+
+.blogBox {
+    background-color: $text-secondary;
+    flex-basis: 70%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.blogItem-imageController {
+    max-width: 9rem;
+}
+
+.blogItem-imageController img {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.blogItem {
+    margin: 2rem;
+    
+    min-height: 30rem;
+
+    background-color: $polar-autumn;
+
+    &__head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: greenyellow;
+        padding: 2rem;
+
+        &--title {
+            flex-basis: 70%;
+        }
+
+        &--author {
+            flex-basis: 30%;
+            line-height: 2rem;
+            font-size: 1.1rem;
+
+            p {
+                font-size: .9rem;
+            }
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        background-color: blue;
+        min-height: 100%;
+    }
+}
+
