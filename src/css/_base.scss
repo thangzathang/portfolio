@@ -16,6 +16,12 @@ $dark-secondary: #1F2833;
 $neutral-color: #C5C6C7;
 $text-primary: #66FCF1;
 $text-secondary: #45A29E; 
+$polar-primary: #ED553B;
+$polar-secondary: #F6D55C;
+
+$polar-evening: #FF9912;
+$polar-sunflower: #FFD700;
+$polar-autumn: #FF6103;
 
 body {
     text-align: center;
@@ -31,7 +37,7 @@ img {
 }
 
 nav {
-    z-index: 1000;
+    z-index: 999;
     // padding: 2rem;
     // width: 100%;
     min-height: 12vh;
@@ -63,14 +69,24 @@ nav {
             font-weight: bold;
             font-size: 1.2rem;
         }
+
+        li a:hover {
+            padding-bottom: .5rem;
+            border-bottom: 4px solid $text-primary;
+        }
         
     }
 }
 
 .main-name {
-    color: $text-primary;
     letter-spacing: 4px;
     font-size: 1.5rem;
+    cursor: pointer;
+
+    a {
+        text-decoration: none;
+        color: $text-primary;
+    }
 }
 
 .burger {
@@ -96,7 +112,7 @@ nav {
         position: absolute;
         right: 0px;
         top: 12vh;
-        // height: 100%; 
+        height: 100%; 
         height: 88vh;
         
         background-color: $dark-primary;
@@ -148,4 +164,19 @@ nav {
 .toggle .line3  {
     transform: rotate(45deg) translate(-5px, -6px);
     // transition: .4s ease-in-out;
+}
+
+.mainHeader {
+    display: flex;
+    justify-content: flex-start;
+    padding: 4rem 2rem 1rem;
+
+    color: $text-primary;
+    background-color: $dark-secondary;
+
+    h1 {
+        border-bottom: 5px solid $text-primary;
+        padding-bottom: 1rem;
+        margin-left: 2.5rem;
+    }
 }
