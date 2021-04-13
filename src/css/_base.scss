@@ -23,9 +23,46 @@ $polar-evening: #FF9912;
 $polar-sunflower: #FFD700;
 $polar-autumn: #FF6103;
 
+$color-white: #fff;
+
 body {
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
+}
+
+// Place holder text - for inputs 
+::placeholder {
+    color: $polar-autumn;
+    opacity: 1; /* Firefox */
+  }
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $polar-autumn;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: $polar-autumn;
+}
+
+// Place holder text for - textarea
+textarea::-webkit-input-placeholder {
+    color: $polar-autumn;
+}
+  
+textarea:-moz-placeholder { /* Firefox 18- */
+    color: $polar-autumn;
+}
+  
+textarea::-moz-placeholder {  /* Firefox 19+ */
+    color: $polar-autumn;
+}
+  
+textarea:-ms-input-placeholder {
+    color: $polar-autumn;
+}
+  
+textarea::placeholder {
+    color: $polar-autumn;
 }
 
 /* 
