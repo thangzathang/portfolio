@@ -65,7 +65,9 @@
 }
 
 .blogItem-imageController {
-    max-width: 9rem;
+    max-width: 17rem;
+    margin: 0 2rem;
+    box-shadow: 5px 8px 10px;
 }
 
 .blogItem-imageController img {
@@ -74,8 +76,12 @@
 }
 
 .blogItem {
-    margin: 2rem;
+    color: $text-primary;
+    // If your border radius not showing - try overflow: hidden!
+    border-radius: .5rem;
+    overflow: hidden;
     
+    margin: 2rem;
     min-height: 30rem;
 
     background-color: $polar-autumn;
@@ -84,7 +90,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: greenyellow;
+        background-color: $polar-autumn;
         padding: 2rem;
 
         &--title {
@@ -103,25 +109,39 @@
     }
 
     &__body {
+        color: $dark-secondary;
         text-align: start;
         display: flex;
         flex-direction: column;
 
         padding: 2rem;
-        background-color: blue;
+        background-color: $polar-evening;
         min-height: 100%;
+
+        h3 {
+            margin: .5rem 0;
+            text-transform: uppercase;
+        }
 
         p {
             line-height: 1.1rem;
         }
 
         &--withImage {
+            overflow: hidden;
+            border-radius: 2rem;
             display: flex;
-            align-items: center;
-            justify-content: space-around;
+            align-items: space-around;
+            justify-content: space-between;
             padding: 2rem 1rem;
-            background-color: #fff;
+            background-color: $polar-sunflower;
             margin: 2rem 0;
+
+            &-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
         }
     }
 }
