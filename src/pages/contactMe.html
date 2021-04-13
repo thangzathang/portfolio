@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
     <!-- Link to fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,7 +33,60 @@
             <div class="line3"></div>
         </div>
     </nav>
-    <h1>Contact Me</h1>
+
+    <header class="mainHeader">
+        <h1>Contact Me </h1>
+    </header>
+
+    <div class="container-contactMe">
+        <div class="contactBox">
+
+            <div class="linkBox">
+                <div class="linkBox__image">
+                    <img 
+                    class="linkBox-imageController" 
+                    src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                    alt="Thang Za Thang Profile Page">
+                </div>
+                <div class="linkBox__name">
+                    <h2>Thang Za Thang</h2>
+                </div>
+                <br><br>
+                <p> Connect with me</p>
+                <div class="linkBox__links">
+                    <div class="linkBox__links--item">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="linkBox__links--item">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="linkBox__links--item">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="messageBox">
+                
+                <form action="/" method="post" class="messageBox__wrapper">
+                    <h1>Email Me</h1>
+                    <div class="messageBox__wrapper--item">
+                        <input type="text" placeholder="Stevie Emerson" required>
+                    </div>
+                    <div class="messageBox__wrapper--item">
+                        <input type="text" placeholder="stevieEmerson@gmail.com" required>
+                    </div>
+                    <div class="messageBox__wrapper--item">
+                        <textarea type="text" placeholder="Your message" required></textarea>
+                    </div>
+                    <div class="messageBox__wrapper--item">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>

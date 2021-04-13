@@ -19,6 +19,56 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+::-webkit-input-placeholder {
+  color: #FF6103;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  color: #FF6103;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  color: #FF6103;
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder {
+  color: #FF6103;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #FF6103;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #FF6103;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #FF6103;
+}
+
+textarea:-ms-input-placeholder {
+  color: #FF6103;
+}
+
+textarea::-ms-input-placeholder {
+  color: #FF6103;
+}
+
+textarea::placeholder {
+  color: #FF6103;
+}
+
 /* 
     NAV and Logo Name section 
 */
@@ -385,6 +435,155 @@ nav ul li a:hover {
   z-index: 10;
   min-width: auto;
   max-height: 6rem;
+}
+
+.container-contactMe {
+  padding: 2rem;
+  background-color: #1F2833;
+  max-height: 100%;
+}
+
+.contactBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid black;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.linkBox {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background-color: #FF6103;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.linkBox p {
+  font-size: 1.5rem;
+}
+
+.linkBox__name {
+  border-bottom: 4px solid #fff;
+  padding-bottom: 2rem;
+  margin: 0 2rem;
+}
+
+.linkBox__name h2 {
+  font-size: 2.2rem;
+}
+
+.linkBox__image {
+  padding: 2rem 0;
+}
+
+.linkBox__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+}
+
+.linkBox__links--item {
+  font-size: 3rem;
+}
+
+.linkBox__links--item:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #FFD700;
+  font-size: 3rem;
+}
+
+.linkBox-imageController {
+  border-radius: 50%;
+  max-width: 17rem;
+  margin: 0 2rem;
+}
+
+.linkBox-imageController img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.messageBox {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  background-color: #45A29E;
+  padding: 2rem 8rem;
+}
+
+.messageBox h1 {
+  font-size: 2rem;
+}
+
+.messageBox__wrapper {
+  background-color: #45A29E;
+  min-height: 100%;
+}
+
+.messageBox__wrapper--item {
+  padding: 1.5rem 0;
+}
+
+.messageBox__wrapper--item input {
+  color: #FF6103;
+}
+
+.messageBox__wrapper--item button {
+  font-size: 1.2rem;
+}
+
+.messageBox__wrapper--item button:hover {
+  color: #FF6103;
+  cursor: pointer;
+}
+
+.messageBox__wrapper--item input, .messageBox__wrapper--item textarea, .messageBox__wrapper--item button {
+  color: #1F2833;
+  font-size: 1.1rem;
+  width: 90%;
+  text-indent: 1rem;
+  padding: .5rem  1rem;
+  outline: none;
+  border: none;
+  border-radius: .5rem;
+}
+
+.messageBox__wrapper--item textarea {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.1rem;
+  height: 10rem;
+  color: #1F2833;
+}
+
+@media only screen and (max-width: 992px) {
+  .messageBox {
+    padding: 2rem;
+  }
+  .messageBox__wrapper--item input, .messageBox__wrapper--item textarea, .messageBox__wrapper--item button {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contactBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 #overrideBlog {
