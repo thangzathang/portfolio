@@ -30,6 +30,10 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
+.hide {
+    visibility: hidden;
+}
+
 // Place holder text - for inputs 
 ::placeholder {
     color: $polar-autumn;

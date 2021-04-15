@@ -36,7 +36,7 @@
     }
 }
 
-.image-container {
+.big-container {
     width: 25rem;
     height: 25rem;
     position: relative;
@@ -70,18 +70,81 @@
     align-items: center;
 }
 
-.middle-container__text-box:nth-child(1) {
-    justify-content: flex-start;
-    padding-top: 6rem;
+/* Index H1 and p tags */
+.indexSubheading {
+    padding: .9rem 0;
 }
 
-.middle-container__text-box:nth-child(2) {
-    justify-content: flex-end;
-    padding-bottom: 6rem;
+.indexParagraph {
+    line-height: 1.9rem;
 }
 
-.middle-container__text-box:nth-child(3) {
-    justify-content: flex-start;
-    padding-top: 6rem;
+.indexItem__imageController {
+    max-width: 16rem;
+    margin: 0 2rem;
+}
+
+// Wanted to make the SPECIFIC desk image bigger
+.indexItem__imageController--override {
+    max-width: 22rem;
+    margin: 0 2rem;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 4px;
+}
+
+.indexItem__imageController img {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.middle-container__itemBox:nth-child(1) {
+    padding: 2rem 0;
+    justify-content: space-between;
+}
+
+.middle-container__itemBox:nth-child(2) {
+    padding: 2rem 0;
+    justify-content: space-between;
+}
+
+.middle-container__itemBox:nth-child(3) {
+    padding: 2rem 0;
+    justify-content: space-between;
+}
+
+/* MEDIA QUERIES */
+
+// Index Middle Container first breakpoint 
+@media only screen and (max-width: 1060px) {
+    .middle-container {
+        flex-wrap: wrap;
+    }
+
+    .middle-container__itemBox--textBox:nth-child(1) {
+       padding: 2rem;
+    }
+}
+
+// Laptop breakpoint
+@media only screen and (max-width: 992px) {
+    
+}
+
+// Tablet breakpoint 
+@media only screen and (max-width: 768px) {
+    .middle-container {
+        padding-top: 0;
+    }
+
+    // flip the order of the column
+    .flip{
+       order: 1;
+    }
+
+    .middle-container__itemBox:nth-child(2) {
+        padding-top: 3rem;
+        justify-content: space-between;
+    }
+    
 }
 

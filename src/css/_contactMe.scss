@@ -125,6 +125,9 @@
     }
 }
 
+/* MEDIA QUERIES */
+
+// Laptop breakpoint
 @media only screen and (max-width: 992px) {
     .messageBox {
         padding: 2rem;
@@ -137,18 +140,11 @@
     }
 }
 
+// Tablet breakpoint 
 @media only screen and (max-width: 768px) {
     .contactBox {
         display: flex;
         flex-direction: column;
-    }
-
-    .linkBox {
-
-    }
-
-    .messageBox {
-        
     }
 }
 
