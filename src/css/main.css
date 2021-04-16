@@ -19,10 +19,6 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-.hide {
-  visibility: hidden;
-}
-
 ::-webkit-input-placeholder {
   color: #FF6103;
   opacity: 1;
@@ -552,6 +548,15 @@ nav ul li a:hover {
 
 .linkBox__links--item {
   font-size: 3rem;
+}
+
+.linkBox__links--item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.linkBox__links--item a:hover {
+  color: #FFD700;
 }
 
 .linkBox__links--item:hover {

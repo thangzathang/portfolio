@@ -51,7 +51,16 @@
             font-size: 3rem;
         }
 
-        &--item:hover {
+        &--item a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        &--item a:hover{
+            color: $polar-sunflower;
+        }
+
+        &--item:hover{
             cursor: pointer;
             transform: scale(1.2);
             color: $polar-sunflower;
