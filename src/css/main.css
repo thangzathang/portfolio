@@ -72,6 +72,13 @@ textarea::placeholder {
 /* 
     NAV and Logo Name section 
 */
+.half-break {
+  border: dotted #66FCF1 0.5rem;
+  border-bottom: none;
+  width: 4%;
+  margin: 2rem auto;
+}
+
 nav {
   z-index: 999;
   min-height: 12vh;
@@ -832,5 +839,51 @@ nav ul li a:hover {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1200px) {
+  .blogItem-imageController {
+    max-width: 10rem;
+    margin: 0 2rem;
+  }
+  .blogItem-imageController img {
+    max-width: 40%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .blogBox {
+    margin-top: 2rem;
+  }
+  .top-container--blog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogItem__body--withImage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blogItem-imageController {
+    min-height: 10rem;
+    min-width: 20rem;
+    margin: 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .blogBox {
+    background-color: yellow;
+  }
 }
 /*# sourceMappingURL=main.css.map */

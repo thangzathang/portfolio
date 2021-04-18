@@ -69,8 +69,19 @@ textarea::placeholder {
     NAV and Logo Name section 
 */
 
+.half-break {
+    border: dotted $text-primary .5rem;
+    border-bottom: none;
+    width: 4%;
+    margin: 2rem auto; 
+}
+
 img {
     // z-index: -1;
+}
+
+.half-break {
+
 }
 
 nav {
