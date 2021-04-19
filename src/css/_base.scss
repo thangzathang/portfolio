@@ -84,11 +84,12 @@ img {
 
 }
 
+
 nav {
-    z-index: 999;
+    z-index: 10;
     // padding: 2rem;
     // width: 100%;
-    min-height: 12vh;
+    min-height: 14vh;
     background-color: $dark-primary;
 
     display: flex;
@@ -150,6 +151,7 @@ nav {
     // For the burger toggle animation
     transition: all .39s ease-in-out;
 }
+
 
 /*
     Media Breakpoint for NAV
