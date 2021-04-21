@@ -1,6 +1,6 @@
 # Thang Za Thang - Portfolio - T1A2
 
-### Link to Portfolio site: [Portfolio](https://www.wikipedia.org/)
+### Link to Portfolio site: [Portfolio](https://thangzathang.netlify.app/)
 
 <br />
 
@@ -9,33 +9,43 @@
 <br />
 
 ### 1. Purpose: 
-The purpose of this website is to showcase my web development skills - a portfolio. It will show to recruiters and other developers:
+The purpose of this website is to showcase my web development skills - a portfolio. It will showcase:
 - the programming languages I have learnt
-- the projects I have done
+- the projects I have made, past and present
 - the freelance projects
 - the employment / organizations I have worked for.
 - current employment
 - how to contact me
 
-### 2. Functionality / features
+### 2. Target audience  
+The target audience includes anyone interested in my work which includes recruiters, other web developers, employers and potential clients.
+
+### 3. Tech stack
+
+The tech stack for this specific portfolio website consists of HTML, CSS and Javascript. The deployment platform is netlify. 
 
 <br >
 
-### 3. Sitemap
+### 4. Features
+Feature of this website:
+- Can download Resume from a single click.
+- Links to all my socials to reach me: Github, LinkedIn, Twitter
+- Unique Contact me me page with send message.
+- List of all my skills in programming languages.
+- My blog pages to see my latest blogs.
 
 <br >
 
-### 4. Screenshots
+### 5. Sitemap
+##### Here is my site map, made using draw.io
+![Thang's Portfolio site map](/docs/sitemapthangzathang.png)
 
 <br >
 
-### 5. Target audience  
-The target audience is my Coder Academy Educator for now. 
+### 6. Screenshots
 
-<br >
+<br > 
 
-### 6. Tech stack
 
-The tech stack consists of HTML, CSS and Javascript. The deployment platform is netlify and I bought my own domain name from godaddy.com.
 
 
