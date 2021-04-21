@@ -43,6 +43,7 @@ Feature of this website:
 <br >
 
 ### 6. Screenshots
+![Index Page 1](/docs/webpageScreenshots/indexSC1.png)
 
 <br > 
 

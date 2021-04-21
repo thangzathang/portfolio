@@ -277,7 +277,7 @@ footer {
 }
 
 .big-container {
-  width: 25rem;
+  width: 28rem;
   height: 25rem;
 }
 
@@ -285,7 +285,7 @@ footer {
   display: inline;
   margin: 0 auto;
   height: 100%;
-  width: auto;
+  width: 100%;
 }
 
 .middle-container {
