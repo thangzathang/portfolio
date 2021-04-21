@@ -213,6 +213,20 @@
        margin: 0;
    }
 
+   .blogItem__body {
+       padding: 1rem 1rem;
+   }
 
+   .blogItem__body--withImage {
+       margin-left: 0;
+       margin-right: 0;
+   }
+
+   .blogItem-imageController {
+    min-height: 14rem;
+    min-width: 20rem;
+    margin: 2rem 0;
+    
+    }
 }
 
