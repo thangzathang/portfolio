@@ -1,8 +1,9 @@
+// Styles the top container - including the big profile shot and the background image
 .top-container--index {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    // Photo from free non-commercial use www.unsplash.com 
     background-image: 
     linear-gradient(
         to right bottom,
@@ -11,7 +12,6 @@
     ),
     url("https://images.unsplash.com/photo-1545405197-2964efafb2c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
 
-    /* Set a specific height */
   	min-height: 90vh;
 
     background-repeat: no-repeat;
@@ -19,6 +19,7 @@
     background-position: center;
 }
 
+// This container makes it so the background images stays in the background!
 .text-container {
     color: $text-primary;
 
@@ -36,8 +37,8 @@
     width: 25rem;
     height: 25rem;
     // position: relative;
-    // This is the single line of code that has haunted me!
-    overflow: hidden;
+    // This is the single line of code caused trouble for 2 weeks, 
+    // Enable this code and the navbar is behind the image in mobile view. Why?  
 
     img {
         display: inline;
@@ -47,7 +48,7 @@
     }
 }
 
-
+// This is the parent container of the three images and texts
 .middle-container {
     padding: 2rem 0;
     display: flex;
@@ -58,11 +59,6 @@
     width: 100%;
 
     background-color: #fff;
-}
-
-.index-imageController img {
-    min-width: 100%;
-    min-height: 100%;
 }
 
 .middle-container div {
@@ -80,12 +76,17 @@
     line-height: 1.9rem;
 }
 
-// Styling for Profile Picture
+// Styles the last two png photos.
 .index-imageController{
     border-radius: 50%;
 }
 
-// Styling for DESK image
+.index-imageController img {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+// Styling for specific DESK image - jpeg and png don't act the same for some reason.
 .indexItem__imageController {
     max-width: 16rem;
     margin: 0 2rem;
@@ -103,6 +104,8 @@
     min-height: 100%;
 }
 
+// These three blocks of code are same but they give control for modifying each specific item. 
+// Good to have for future use, will not take away just yet.
 .middle-container__itemBox:nth-child(1) {
     padding: 2rem 0;
     justify-content: space-between;
@@ -143,7 +146,7 @@
         padding-top: 0;
     }
 
-    // flip the order of the column
+    // flip the order of the column os the image is on the top.
     .flip{
        order: 1;
     }

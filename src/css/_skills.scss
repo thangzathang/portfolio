@@ -1,9 +1,9 @@
+// Styling for the page background
 .top-container--skills {
     background-color: $dark-secondary;
-    background-image: none;
-    // background-color: red;
 }
 
+// Styles the Resume Container and its effects
 .resume-container {
     display: flex;
     flex-direction: column;
@@ -26,6 +26,7 @@
     }
 }
 
+// Styles the ROW and each of the ITEMs inside of them.
 .skills-display {
     width: 100vw;
     background-color: $dark-secondary;
@@ -72,12 +73,13 @@
     }
 }
 
+// Skills image controller - stop the ridiculously large png logos from covering up the screen.
 .skills-image {
     max-width: 14rem;
     max-height: 6rem;
 }
 
-
+// Styles the github link
 .bottom-container-skills {
     max-width: 100%;
     max-height: 100%;

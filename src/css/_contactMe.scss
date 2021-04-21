@@ -1,22 +1,19 @@
+// The Global container for ContactMe page
 .container-contactMe {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     padding: 2rem;
     background-color: $dark-secondary;
     max-height: 100%;
 }
 
+// The div container to give the two children elements the same smooth border
 .contactBox {
     display: flex;
-    
     border: 2px solid black;
-
     border-radius: 2rem;
     overflow: hidden;
 }
 
-
+// 1st Child of contactBox - 30% of the parent!
 .linkBox {
     flex-basis: 40%;
     background-color: $polar-autumn;
@@ -69,6 +66,7 @@
     }
 }
 
+// Custom Image Controller for the profile image
 .linkBox-imageController {
     border-radius: 50%;
     max-width: 17rem;
@@ -80,8 +78,8 @@
     min-height: 100%;
 }
 
+// 2nd Child of contactBox - 70% of the parent!
 .messageBox {
-    // max-height: 100%;
     flex-basis: 60%;
     background-color: $text-secondary;
 

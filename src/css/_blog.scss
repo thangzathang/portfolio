@@ -1,7 +1,9 @@
+// Just need the mainHeader an extra 1rem top padding.
 #overrideBlog {
     padding-top: 1rem;
 }
 
+// Styles the body of the page
 .top-container--blog {
     display: flex;
     justify-content: center;
@@ -12,6 +14,7 @@
     background-image: none;
 }
 
+// 25% of the page, styles the links to the blog.
 .contentBox {
     overflow: scroll;
     padding: 1rem .6rem;
@@ -57,6 +60,7 @@
     }
 }
 
+// 70% of the screen - styles the blog box.
 .blogBox {
     background-color: $text-secondary;
     flex-basis: 70%;
@@ -65,6 +69,7 @@
     border-radius: .5rem;
 }
 
+// Stop certain images from taking up too much of the screen.
 .blogItem-imageController {
     max-width: 17rem;
     margin: 0 2rem;
@@ -76,6 +81,7 @@
     min-height: 100%;
 }
 
+// Styles the individual blog posts. Two main component nested inside of it: head and body.
 .blogItem {
     color: $text-primary;
     // If your border radius not showing - try overflow: hidden!
