@@ -17,7 +17,6 @@
 body {
   text-align: center;
   font-family: 'Noto Sans', sans-serif;
-  overflow-x: hidden;
 }
 
 ::-webkit-input-placeholder {
@@ -84,6 +83,7 @@ nav {
   z-index: 10;
   min-height: 14vh;
   background-color: #0B0C10;
+  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -7,7 +7,7 @@ const navSlide = () => {
         nav.classList.toggle('nav-active');
 
         // Burger Animation
-        burger.classList.toggle('toggle');
+        // burger.classList.toggle('toggle');
     });
 }
 
