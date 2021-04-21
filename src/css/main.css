@@ -80,29 +80,40 @@ textarea::placeholder {
 }
 
 nav {
+  z-index: 10;
+  min-height: 14vh;
+  background-color: #0B0C10;
+  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  /* 
+        More white space control between logo and nav links
+        justify-content: space-between;
+        padding: 0 6rem;
+    */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 14vh;
-  background-color: #0B0C10;
 }
 
-.nav-links {
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 30%;
+  min-width: 45%;
 }
 
-.nav-links a {
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
   color: #66FCF1;
   text-decoration: none;
   letter-spacing: 2px;
@@ -110,7 +121,7 @@ nav {
   font-size: 1.2rem;
 }
 
-.nav-links a:hover {
+nav ul li a:hover {
   padding-bottom: .5rem;
   border-bottom: 4px solid #66FCF1;
 }
@@ -143,13 +154,6 @@ nav {
     Media Breakpoint for NAV
 */
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-    /*
-        This will hide the nav bar after we have moved it left 
-        and users simply won't be able to simply scroll on the x axis 
-        */
-  }
   .nav-links {
     position: absolute;
     right: 0px;
@@ -174,6 +178,13 @@ nav {
     transition: -webkit-transform .5s ease-out;
     transition: transform .5s ease-out;
     transition: transform .5s ease-out, -webkit-transform .5s ease-out;
+  }
+  body {
+    overflow-x: hidden;
+    /*
+        This will hide the nav bar after we have moved it left 
+        and users simply won't be able to simply scroll on the x axis 
+        */
   }
   .burger {
     display: inline-block;
