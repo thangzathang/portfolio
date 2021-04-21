@@ -25,9 +25,15 @@ $polar-autumn: #FF6103;
 
 $color-white: #fff;
 
+html {
+    overflow-x: hidden;
+}
+
 body {
+    position: relative;
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 // Place holder text - for inputs 
@@ -75,15 +81,6 @@ textarea::placeholder {
     width: 4%;
     margin: 2rem auto; 
 }
-
-img {
-    // z-index: -1;
-}
-
-.half-break {
-
-}
-
 
 nav {
     z-index: 10;
