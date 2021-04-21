@@ -124,10 +124,6 @@ nav {
     }
 }
 
-nav.links {
-    
-}
-
 .main-name {
     letter-spacing: 4px;
     font-size: 1.5rem;
@@ -230,4 +226,10 @@ nav.links {
         padding-bottom: 1rem;
         margin-left: 2.5rem;
     }
+}
+
+footer {
+    padding: .4rem 0;
+    color: $text-primary;
+    background-color: $dark-secondary;
 }

@@ -239,6 +239,12 @@ nav ul li a:hover {
   margin-left: 2.5rem;
 }
 
+footer {
+  padding: .4rem 0;
+  color: #66FCF1;
+  background-color: #1F2833;
+}
+
 .top-container--index {
   display: -webkit-box;
   display: -ms-flexbox;
