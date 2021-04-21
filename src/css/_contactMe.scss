@@ -157,3 +157,9 @@
     }
 }
 
+// Phone breakpoint 
+@media only screen and (max-width: 480px) {
+    .container-contactMe {
+        padding: 2rem 4px;
+    }
+}

@@ -272,12 +272,9 @@ nav ul li a:hover {
 }
 
 .big-container {
-  z-index: 6;
   width: 25rem;
   height: 25rem;
-  position: relative;
   overflow: hidden;
-  border-radius: 50%;
 }
 
 .big-container img {
@@ -300,6 +297,11 @@ nav ul li a:hover {
   background-color: #fff;
 }
 
+.index-imageController img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .middle-container div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,6 +322,10 @@ nav ul li a:hover {
 
 .indexParagraph {
   line-height: 1.9rem;
+}
+
+.index-imageController {
+  border-radius: 50%;
 }
 
 .indexItem__imageController {
@@ -373,6 +379,11 @@ nav ul li a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  .index-imageController {
+    max-height: 20rem;
+    max-width: 20rem;
+    margin: 2rem 0;
+  }
   .middle-container {
     padding-top: 0;
   }
@@ -386,6 +397,14 @@ nav ul li a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .index-imageController {
+    max-height: 18rem;
+    max-width: 20rem;
+    margin: 2rem 0;
   }
 }
 
@@ -690,6 +709,12 @@ nav ul li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container-contactMe {
+    padding: 2rem 4px;
   }
 }
 

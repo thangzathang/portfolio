@@ -33,12 +33,11 @@
 }
 
 .big-container {
-    z-index: 6;
     width: 25rem;
     height: 25rem;
-    position: relative;
+    // position: relative;
+    // This is the single line of code that has haunted me!
     overflow: hidden;
-    border-radius: 50%;
 
     img {
         display: inline;
@@ -61,6 +60,11 @@
     background-color: #fff;
 }
 
+.index-imageController img {
+    min-width: 100%;
+    min-height: 100%;
+}
+
 .middle-container div {
     display: flex;
     flex-direction: column;
@@ -76,12 +80,17 @@
     line-height: 1.9rem;
 }
 
+// Styling for Profile Picture
+.index-imageController{
+    border-radius: 50%;
+}
+
+// Styling for DESK image
 .indexItem__imageController {
     max-width: 16rem;
     margin: 0 2rem;
 }
 
-// Wanted to make the SPECIFIC desk image bigger
 .indexItem__imageController--override {
     max-width: 22rem;
     margin: 0 2rem;
@@ -122,13 +131,14 @@
     }
 }
 
-// Laptop breakpoint
-@media only screen and (max-width: 992px) {
-    
-}
-
 // Tablet breakpoint 
 @media only screen and (max-width: 768px) {
+    .index-imageController{
+        max-height: 20rem;
+        max-width: 20rem;
+        margin: 2rem 0;
+    }
+
     .middle-container {
         padding-top: 0;
     }
@@ -142,6 +152,13 @@
         padding-top: 3rem;
         justify-content: space-between;
     }
-    
 }
 
+// Phone breakpoint 
+@media only screen and (max-width: 480px) {
+    .index-imageController{
+        max-height: 18rem;
+        max-width: 20rem;
+        margin: 2rem 0;
+    }
+}
