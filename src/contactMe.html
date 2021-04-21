@@ -74,16 +74,16 @@
 
             <div class="messageBox">
                 
-                <form action="/" method="post" class="messageBox__wrapper">
+                <form action="https://formspree.io/f/xvodgwjj" method="POST" class="messageBox__wrapper">
                     <h1>Email Me</h1>
                     <div class="messageBox__wrapper--item">
-                        <input type="text" placeholder="Richard Henderson" required>
+                        <input type="text" name="name"  id="full-name" placeholder="Richard Henderson" required>
                     </div>
                     <div class="messageBox__wrapper--item">
-                        <input type="text" placeholder="richardhenderson@hooli.com" required>
+                        <input type="email" name="_replyto" id="email-address" placeholder="richardhenderson@hooli.com" required>
                     </div>
                     <div class="messageBox__wrapper--item">
-                        <textarea type="text" placeholder="Your message" required></textarea>
+                        <textarea type="text" name="message" placeholder="Your message" required></textarea>
                     </div>
                     <div class="messageBox__wrapper--item">
                         <button type="submit">Send Message</button>
