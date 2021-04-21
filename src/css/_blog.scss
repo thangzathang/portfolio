@@ -186,6 +186,33 @@
 
 // Tablet breakpoint 
 @media only screen and (max-width: 768px) {
-   // No changes necessary
+    :root {
+        font-size: 17.5px;
+    }
+
+    .top-container--blog {
+        padding: 1rem 4px;
+    }
+
+   .blogItem {
+       margin: 0;
+   }
+}
+
+// Phone breakpoint 
+@media only screen and (max-width: 480px) {
+    :root {
+        font-size: 15px;
+    }
+
+    .top-container--blog {
+        padding: 1rem 4px;
+    }
+
+   .blogItem {
+       margin: 0;
+   }
+
+
 }
 

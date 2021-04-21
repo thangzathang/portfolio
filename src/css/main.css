@@ -916,4 +916,28 @@ nav ul li a:hover {
     margin: 2rem 0;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  :root {
+    font-size: 17.5px;
+  }
+  .top-container--blog {
+    padding: 1rem 4px;
+  }
+  .blogItem {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  :root {
+    font-size: 15px;
+  }
+  .top-container--blog {
+    padding: 1rem 4px;
+  }
+  .blogItem {
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */
