@@ -1,0 +1,238 @@
+// Just need the mainHeader an extra 1rem top padding.
+#overrideBlog {
+    padding-top: 1rem;
+}
+
+// Styles the body of the page
+.top-container--blog {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+    min-height: 100%;
+
+    background-color: $dark-secondary;
+    background-image: none;
+}
+
+// 25% of the page, styles the links to the blog.
+.contentBox {
+    overflow: scroll;
+    padding: 1rem .6rem;
+    border-radius: 2rem;
+    margin: 0 1rem;
+    background-color: $text-secondary;
+    flex-basis: 25%;
+
+    &__contentItem:hover {
+        transition: border .1s ease;
+        border-left: 1.2rem solid $polar-primary;
+        font-weight: 800;
+        color: $polar-primary;
+
+        a {
+            color: inherit;
+        }
+    }
+
+    &__contentItem {
+        color: $dark-secondary;
+        padding: .6rem;
+        margin: 1rem;
+        background-color: $neutral-color;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        border-left: 0.8rem solid $text-primary;
+        border-top-right-radius: 1.2rem;
+        border-bottom-right-radius: 1.2rem;
+        border-top-left-radius: .4rem;
+        border-bottom-left-radius: .4rem;
+
+        a {
+            cursor: pointer;
+            text-decoration: none;
+            margin: 4px 0;
+            color: $dark-secondary;
+        }
+    }
+}
+
+// 70% of the screen - styles the blog box.
+.blogBox {
+    background-color: $text-secondary;
+    flex-basis: 70%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: .5rem;
+}
+
+// Stop certain images from taking up too much of the screen.
+.blogItem-imageController {
+    max-width: 17rem;
+    margin: 0 2rem;
+    box-shadow: 5px 8px 10px;
+}
+
+.blogItem-imageController img {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+// Styles the individual blog posts. Two main component nested inside of it: head and body.
+.blogItem {
+    color: $text-primary;
+    // If your border radius not showing - try overflow: hidden!
+    border-radius: .5rem;
+    overflow: hidden;
+    
+    margin: 2rem;
+    min-height: 30rem;
+
+    background-color: $polar-autumn;
+
+    &__head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $polar-autumn;
+        padding: 2rem;
+
+        &--title {
+            flex-basis: 70%;
+        }
+
+        &--author {
+            flex-basis: 30%;
+            line-height: 2rem;
+            font-size: 1.1rem;
+
+            p {
+                font-size: .9rem;
+            }
+        }
+    }
+
+    &__body {
+        color: $dark-secondary;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+
+        padding: 2rem;
+        background-color: $polar-evening;
+        min-height: 100%;
+
+        h3 {
+            margin: .5rem 0;
+            text-transform: uppercase;
+        }
+
+        p {
+            line-height: 1.1rem;
+        }
+
+        &--withImage {
+            overflow: hidden;
+            border-radius: 2rem;
+            display: flex;
+            align-items: space-around;
+            justify-content: space-between;
+            padding: 2rem 1rem;
+            background-color: $polar-sunflower;
+            margin: 2rem 0;
+
+            &-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+/* MEDIA QUERIES */
+
+// Blog first breakpoint 
+@media only screen and (max-width: 1200px) {
+    .blogItem-imageController {
+        max-width: 10rem;
+        margin: 0 2rem;
+    }
+    
+    .blogItem-imageController img {
+        max-width: 40%;
+    }
+}   
+
+// Laptop breakpoint
+@media only screen and (max-width: 992px) {
+    .blogBox {
+        margin-top: 2rem;
+    }
+
+    .top-container--blog {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blogItem__body--withImage {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blogItem-imageController {
+        min-height: 10rem;
+        min-width: 20rem;
+        margin: 2rem 0;
+    }
+}
+
+// Tablet breakpoint 
+@media only screen and (max-width: 768px) {
+    :root {
+        font-size: 17.5px;
+    }
+
+    .top-container--blog {
+        padding: 1rem 4px;
+    }
+
+   .blogItem {
+       margin: 0;
+   }
+}
+
+// Phone breakpoint 
+@media only screen and (max-width: 480px) {
+    :root {
+        font-size: 15px;
+    }
+
+    .top-container--blog {
+        padding: 1rem 4px;
+    }
+
+   .blogItem {
+       margin: 0;
+   }
+
+   .blogItem__body {
+       padding: 1rem 1rem;
+   }
+
+   .blogItem__body--withImage {
+       margin-left: 0;
+       margin-right: 0;
+   }
+
+   .blogItem-imageController {
+    min-height: 14rem;
+    min-width: 20rem;
+    margin: 2rem 0;
+    
+    }
+}
+

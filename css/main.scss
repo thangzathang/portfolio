@@ -1,0 +1,18 @@
+/* 
+    Main will serve only as the spin of my styling structure
+*/
+
+// Base - This is for the html and body styling and the global nav bar
+@import "base";
+
+// index.html
+@import "index";
+
+// Skill.html
+@import "skills";
+
+// ContactMe.html
+@import "contactMe";
+
+// blog.html
+@import "blog"
