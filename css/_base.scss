@@ -1,74 +1,78 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* 
     Inspired Color Scheme from: 
     https://visme.co/blog/website-color-schemes/
-*/ 
+*/
 
-$dark-primary: #0B0C10;
-$dark-secondary: #1F2833;
-$neutral-color: #C5C6C7;
-$text-primary: #66FCF1;
-$text-secondary: #45A29E; 
-$polar-primary: #ED553B;
-$polar-secondary: #F6D55C;
+$dark-primary: #0b0c10;
+$dark-secondary: #1f2833;
+$neutral-color: #c5c6c7;
+$text-primary: #66fcf1;
+$text-secondary: #45a29e;
+$polar-primary: #ed553b;
+$polar-secondary: #f6d55c;
 
-$polar-evening: #FF9912;
-$polar-sunflower: #FFD700;
-$polar-autumn: #FF6103;
+$polar-evening: #ff9912;
+$polar-sunflower: #ffd700;
+$polar-autumn: #ff6103;
 
 $color-white: #fff;
 
 html {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body {
-    position: relative;
-    text-align: center;
-    font-family: 'Noto Sans', sans-serif;
-    overflow-x: hidden;
+  position: relative;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  overflow-x: hidden;
 }
 
-// Place holder text - for inputs 
+// Place holder text - for inputs
 ::placeholder {
-    color: $polar-autumn;
-    opacity: 1; /* Firefox */
-  }
-  
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: $polar-autumn;
+  color: $polar-autumn;
+  opacity: 1; /* Firefox */
 }
-  
-::-ms-input-placeholder { /* Microsoft Edge */
-   color: $polar-autumn;
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $polar-autumn;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $polar-autumn;
 }
 
 // Place holder text for - textarea
 textarea::-webkit-input-placeholder {
-    color: $polar-autumn;
+  color: $polar-autumn;
 }
-  
-textarea:-moz-placeholder { /* Firefox 18- */
-    color: $polar-autumn;
+
+textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: $polar-autumn;
 }
-  
-textarea::-moz-placeholder {  /* Firefox 19+ */
-    color: $polar-autumn;
+
+textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: $polar-autumn;
 }
-  
+
 textarea:-ms-input-placeholder {
-    color: $polar-autumn;
+  color: $polar-autumn;
 }
-  
+
 textarea::placeholder {
-    color: $polar-autumn;
+  color: $polar-autumn;
 }
 
 /* 
@@ -76,160 +80,159 @@ textarea::placeholder {
 */
 
 .half-break {
-    border: dotted $text-primary .5rem;
-    border-bottom: none;
-    width: 4%;
-    margin: 2rem auto; 
+  border: dotted $text-primary 0.5rem;
+  border-bottom: none;
+  width: 4%;
+  margin: 2rem auto;
 }
 
 nav {
-    z-index: 10;
-    // padding: 2rem;
-    // width: 100%;
-    min-height: 14vh;
-    background-color: $dark-primary;
-    overflow-x: hidden;
+  z-index: 10;
+  // padding: 2rem;
+  // width: 100%;
+  min-height: 14vh;
+  background-color: $dark-primary;
+  overflow-x: hidden;
 
-    display: flex;
-    justify-content: space-evenly;
-    /* 
+  display: flex;
+  justify-content: space-evenly;
+  /* 
         More white space control between logo and nav links
         justify-content: space-between;
         padding: 0 6rem;
-    */ 
-    align-items: center;
+    */
+  align-items: center;
 
-    // Easier for now to nest nav than use classes
-    ul {
-        display: flex;
-        justify-content: space-around;
-        min-width: 45%;
+  // Easier for now to nest nav than use classes
+  ul {
+    display: flex;
+    justify-content: space-around;
+    min-width: 45%;
 
-        li {
-            list-style-type: none;
-        }
-
-        li a {
-            color: $text-primary;
-            text-decoration: none;
-            letter-spacing: 2px;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        li a:hover {
-            padding-bottom: .5rem;
-            border-bottom: 4px solid $text-primary;
-        }
+    li {
+      list-style-type: none;
     }
+
+    li a {
+      color: $text-primary;
+      text-decoration: none;
+      letter-spacing: 2px;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    li a:hover {
+      padding-bottom: 0.5rem;
+      border-bottom: 4px solid $text-primary;
+    }
+  }
 }
 
 .main-name {
-    letter-spacing: 4px;
-    font-size: 1.5rem;
-    cursor: pointer;
+  letter-spacing: 4px;
+  font-size: 1.5rem;
+  cursor: pointer;
 
-    a {
-        text-decoration: none;
-        color: $text-primary;
-    }
+  a {
+    text-decoration: none;
+    color: $text-primary;
+  }
 }
 
 .burger {
-    display: none;
+  display: none;
 }
 
-.burger div{
-    background-color: $text-primary;
-    width: 25px;
-    height: 3px;
-    margin: 5px;
+.burger div {
+  background-color: $text-primary;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
 
-    // For the burger toggle animation
-    transition: all .39s ease-in-out;
+  // For the burger toggle animation
+  transition: all 0.39s ease-in-out;
 }
-
 
 /*
     Media Breakpoint for NAV
 */
 @media screen and (max-width: 768px) {
-    // Needed the nav-link class now - not gonna do the sass nesting. Counter-practical.
-    .nav-links {
-        position: absolute;
-        right: 0px;
-        top: 12vh;
-        height: 100%; 
-        height: 88vh;
-        
-        background-color: $dark-primary;
+  // Needed the nav-link class now - not gonna do the sass nesting. Counter-practical.
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    top: 12vh;
+    height: 100%;
+    height: 88vh;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    background-color: $dark-primary;
 
-        width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-        // Move the nav off the screen and then hide the overflow in x axis.
-        transform: translateX(100%);
-        transition: transform .5s ease-out;
-    }
+    width: 50%;
 
-    body {
-        overflow-x: hidden;
-        /*
+    // Move the nav off the screen and then hide the overflow in x axis.
+    transform: translateX(100%);
+    transition: transform 0.5s ease-out;
+  }
+
+  body {
+    overflow-x: hidden;
+    /*
         This will hide the nav bar after we have moved it left 
         and users simply won't be able to simply scroll on the x axis 
         */
-    }
+  }
 
-    .burger {
-        display: inline-block;
-        /*
+  .burger {
+    display: inline-block;
+    /*
         When this breakpoint hits, it will trigger so that 
         the nav links are moved out of screen and the burger comes on
         */
-        cursor: pointer;
-    }
+    cursor: pointer;
+  }
 }
 
 .nav-active {
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
 
-.toggle .line1  {
-    transform: rotate(-45deg) translate(-5px, 6px);
-    // transition: .4s ease-in-out;
-    // managed the animations at parent
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  // transition: .4s ease-in-out;
+  // managed the animations at parent
 }
 
-.toggle .line2  {
-    opacity: 0;
-    // transition: .2s ease-in-out;
+.toggle .line2 {
+  opacity: 0;
+  // transition: .2s ease-in-out;
 }
 
-.toggle .line3  {
-    transform: rotate(45deg) translate(-5px, -6px);
-    // transition: .4s ease-in-out;
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+  // transition: .4s ease-in-out;
 }
 
 .mainHeader {
-    display: flex;
-    justify-content: flex-start;
-    padding: 4rem 2rem 1rem;
+  display: flex;
+  justify-content: flex-start;
+  padding: 4rem 2rem 1rem;
 
-    color: $text-primary;
-    background-color: $dark-secondary;
+  color: $text-primary;
+  background-color: $dark-secondary;
 
-    h1 {
-        border-bottom: 5px solid $text-primary;
-        padding-bottom: 1rem;
-        margin-left: 2.5rem;
-    }
+  h1 {
+    border-bottom: 5px solid $text-primary;
+    padding-bottom: 1rem;
+    margin-left: 2.5rem;
+  }
 }
 
 footer {
-    padding: .4rem 0;
-    color: $text-primary;
-    background-color: $dark-secondary;
+  padding: 0.4rem 0;
+  color: $text-primary;
+  background-color: $dark-secondary;
 }
