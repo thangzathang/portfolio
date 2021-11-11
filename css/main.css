@@ -296,7 +296,7 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 95vh;
+  height: 85vh;
   width: 100%;
   background-color: #fff;
 }
@@ -339,7 +339,7 @@ footer {
 
 .indexItem__imageController--override {
   max-width: 22rem;
-  margin: 2rem 2rem;
+  margin: 0rem 2rem;
   border-radius: 2rem;
   -webkit-box-shadow: 5px 5px 4px;
           box-shadow: 5px 5px 4px;
@@ -351,20 +351,13 @@ footer {
 }
 
 .middle-container__itemBox:nth-child(1) {
-  padding: 2rem 0;
+  padding: 3rem 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .middle-container__itemBox:nth-child(2) {
-  padding: 2rem 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.middle-container__itemBox:nth-child(3) {
   padding: 2rem 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
