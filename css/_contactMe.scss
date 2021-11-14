@@ -1,163 +1,165 @@
 // The Global container for ContactMe page
 .container-contactMe {
-    padding: 2rem;
-    background-color: $dark-secondary;
-    max-height: 100%;
+  padding: 2rem;
+  background-color: $dark-secondary;
+  max-height: 100%;
 }
 
 // The div container to give the two children elements the same smooth border
 .contactBox {
-    display: flex;
-    border: 2px solid black;
-    border-radius: 2rem;
-    overflow: hidden;
+  display: flex;
+  border: 2px solid black;
+  border-radius: 2rem;
+  overflow: hidden;
 }
 
 // 1st Child of contactBox - 30% of the parent!
 .linkBox {
-    flex-basis: 40%;
-    background-color: $polar-autumn;
-    padding: 1rem 0;
-    color: $color-white;
+  flex-basis: 40%;
+  background-color: $polar-autumn;
+  padding: 1rem 0;
+  color: $color-white;
 
-    p {
-        font-size: 1.5rem;
+  p {
+    font-size: 1.5rem;
+  }
+
+  &__name {
+    border-bottom: 4px solid $color-white;
+    padding-bottom: 2rem;
+    margin: 0 2rem;
+
+    h2 {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__image {
+    padding: 2rem 0;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 0;
+
+    &--item {
+      font-size: 3rem;
     }
 
-    &__name {
-        border-bottom: 4px solid $color-white;
-        padding-bottom: 2rem;
-        margin: 0 2rem;
-
-        h2 {
-            font-size: 2.2rem;
-        }
+    &--item a {
+      text-decoration: none;
+      color: #fff;
     }
 
-    &__image {
-        padding: 2rem 0;
+    &--item a:hover {
+      color: $polar-sunflower;
     }
 
-    &__links {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 2rem 0;
-
-        &--item {
-            font-size: 3rem;
-        }
-
-        &--item a{
-            text-decoration: none;
-            color: #fff;
-        }
-
-        &--item a:hover{
-            color: $polar-sunflower;
-        }
-
-        &--item:hover{
-            cursor: pointer;
-            transform: scale(1.2);
-            color: $polar-sunflower;
-            font-size: 3rem;
-        }
+    &--item:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+      color: $polar-sunflower;
+      font-size: 3rem;
     }
+  }
 }
 
 // Custom Image Controller for the profile image
 .linkBox-imageController {
-    border-radius: 50%;
-    max-width: 17rem;
-    margin: 0 2rem;
+  border-radius: 50%;
+  max-width: 17rem;
+  margin: 0 2rem;
 }
 
 .linkBox-imageController img {
-    min-width: 100%;
-    min-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 // 2nd Child of contactBox - 70% of the parent!
 .messageBox {
-    flex-basis: 60%;
+  flex-basis: 60%;
+  background-color: $text-secondary;
+
+  padding: 2rem 8rem;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  &__wrapper {
     background-color: $text-secondary;
+    min-height: 100%;
 
-    padding: 2rem 8rem;
+    &--item {
+      padding: 1.5rem 0;
 
-    h1 {
-        font-size: 2rem;
+      input {
+        color: $polar-autumn;
+      }
     }
 
-    &__wrapper {
-        background-color: $text-secondary;
-        min-height: 100%;
-
-        &--item {
-            padding: 1.5rem 0;
-
-            input {
-                color: $polar-autumn; 
-            }
-    
-        }
-
-        &--item button {
-            font-size: 1.2rem;
-        }
-
-        &--item button:hover{
-            color: $polar-autumn;
-            cursor: pointer;
-        }
-
-        &--item input, &--item textarea, &--item button{
-            color: $dark-secondary;    
-            font-size: 1.1rem;
-            width: 90%;
-            text-indent: 1rem;
-            padding: .5rem  1rem;
-            outline: none;
-            border: none;
-            border-radius: .5rem;
-        }
-
-        &--item textarea {
-            font-family: 'Noto Sans', sans-serif;
-            font-size: 1.1rem;
-            height: 10rem;
-            color: $dark-secondary;    
-        }
-
+    &--item button {
+      font-size: 1.2rem;
     }
+
+    &--item button:hover {
+      color: $polar-autumn;
+      cursor: pointer;
+    }
+
+    &--item input,
+    &--item textarea,
+    &--item button {
+      color: $dark-secondary;
+      font-size: 1.1rem;
+      width: 90%;
+      text-indent: 1rem;
+      padding: 0.5rem 1rem;
+      outline: none;
+      border: none;
+      border-radius: 0.5rem;
+    }
+
+    &--item textarea {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 1.1rem;
+      height: 10rem;
+      color: $dark-secondary;
+    }
+  }
 }
 
 /* MEDIA QUERIES */
 
 // Laptop breakpoint
 @media only screen and (max-width: 992px) {
-    .messageBox {
-        padding: 2rem;
+  .messageBox {
+    padding: 2rem;
 
-        &__wrapper {
-            &--item input, &--item textarea, &--item button{
-                width: 100%;
-            }
-        }
+    &__wrapper {
+      &--item input,
+      &--item textarea,
+      &--item button {
+        width: 100%;
+      }
     }
+  }
 }
 
-// Tablet breakpoint 
+// Tablet breakpoint
 @media only screen and (max-width: 768px) {
-    .contactBox {
-        display: flex;
-        flex-direction: column;
-    }
+  .contactBox {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-// Phone breakpoint 
+// Phone breakpoint
 @media only screen and (max-width: 480px) {
-    .container-contactMe {
-        padding: 2rem 4px;
-    }
+  .container-contactMe {
+    padding: 2rem 4px;
+  }
 }

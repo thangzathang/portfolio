@@ -74,8 +74,24 @@
 
 // Skills image controller - stop the ridiculously large png logos from covering up the screen.
 .skills-image {
-  max-width: 14rem;
-  max-height: 6rem;
+  max-width: 28rem;
+  min-height: 16rem;
+  border-radius: 1.5rem;
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1);
+  cursor: pointer;
+}
+
+.skills-image:hover {
+  transform: scale(1.1);
+}
+
+.project_tag {
+  text-decoration: none;
+  color: $dark-secondary;
+}
+
+.project_tag:hover {
+  color: $polar-primary;
 }
 
 // Styles the github link
@@ -119,5 +135,18 @@
     z-index: 10;
     min-width: auto;
     max-height: 6rem;
+  }
+}
+
+// Mobile Responsiveness
+@media screen and (max-width: 768px) {
+  .skills-image {
+    max-width: 24.5rem;
+    min-height: 16rem;
+    border-radius: 1rem;
+  }
+
+  .skills-display__box {
+    margin: 1rem 0;
   }
 }
