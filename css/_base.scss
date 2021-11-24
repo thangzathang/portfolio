@@ -314,6 +314,7 @@ footer {
 
 .nav-open .hamburger::before {
   transform: rotate(90deg) translateX(-8px);
+  top: 8px;
 }
 
 .nav-open .hamburger::after {
